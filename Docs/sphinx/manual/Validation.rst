@@ -405,14 +405,14 @@ with Cantera results shown as black ticked lined underlying each continuous line
 `PeleLMeX`, demonstrating the solver accuracy.
 
 
-.. figure:: images/validations/CounterflowFlame/Dodecane_Counterflow_Spatial.png
+.. figure:: images/validations/CounterflowFlame/Dodecane_Counterflow_Spatial_Dodecane_Added.png
    :name: CounterflowLMeXCantera_Spatial
    :align: center
    :figwidth: 50%
 
    : One-dimentional flame spatial profiles with PeleLMeX and Cantera (underlying black dashed lines)
    
-.. figure:: images/validations/CounterflowFlame/Dodecane_Counterflow_Mixture.png
+.. figure:: images/validations/CounterflowFlame/Dodecane_Counterflow_Mixture_Dodecane_Added.png
    :name: CounterflowLMeXCantera_Mixture
    :align: center
    :figwidth: 50%
