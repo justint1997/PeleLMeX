@@ -399,10 +399,8 @@ on the gradient of temperature is used and solution convergence is achieved with
 
 The `PeleLMeX` results obtained using the specified grid refinement criteria are compared to that of 
 Cantera in spatial and mixture fraction space in :numref:`CounterflowLMeXCantera_Spatial` and 
-:numref:`CounterflowLMeXCantera_Mixture`, respectively. Profiles of major species as well as 
-temperature across the flame front are displayed in spatial coordinates and mixture fraction space, 
-with Cantera results shown as black ticked lined underlying each continuous line obtained with 
-`PeleLMeX`, demonstrating the solver accuracy.
+:numref:`CounterflowLMeXCantera_Mixture`, respectively. Centerline profiles of major species as well as 
+temperature across the flame front at steady-state are displayed, with PeleLMeX results indicated by solid colored lines and Cantera results indicated by black ticked lines. The results show very good agreement between the PeleLMeX and Cantera centerline profiles, with only small differences visible when plotting versus spatial coordinate due to differences in geometry (1-D vs. 2-D). 
 
 
 .. figure:: images/validations/CounterflowFlame/Dodecane_Counterflow_Spatial_Dodecane_Added.png
