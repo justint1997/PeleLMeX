@@ -385,7 +385,7 @@ In the present configuration, the geometry consists of a 1.5 cm x 1.5 cm domain 
 and right boundaries and outflow at the top and bottom boundaries. The left and right inflow boundaries 
 correspond to the oxidizer and fuel inlet sides respectively, with an oxidizer/fuel jet section of 
 diameter :math:`d_{jet} = 0.5 cm` (``prob.jet_radius`` of 0.0025) centered at the boundary. The
-remainder of each side’s inflow boundary consists of inert inflow sections with composition of pure N2. 
+remainder of the inflow boundary consists of inert inflow sections with composition of pure N2. 
 The oxidizer jet section composition is that of air, while the fuel jet section composition is pure 
 gaseous Dodecane. The inert inflow velocity on the left and right is set equal to the oxidizer and fuel 
 jet velocities, respectively, in order to eliminate shear interactions between the inert and jet 
@@ -393,11 +393,11 @@ streams. The oxidizer and fuel jet velocities are 15.0 cm/s and 6.17 cm/s, respe
 to a global strain rate of :math:`40 s^{-1}`. The initial condition corresponds to air composition 
 filling the left half of the boundary and gaseous Dodecane composition filling the right half of the 
 boundary with a hyperbolic tangent smoothly transitioning species mass fractions in the center of the 
-domain. Ignition is performed by patching a spherical kernel of elevated temperature in the center of 
-the domain as to cause autoignition. Grid refinement criteria based on the gradient of temperature is 
-used and solution convergence is achieved with ``amr.max_level`` of 2.
+domain. Ignition is performed by patching a spherical kernel of elevated temperature (in this case 1000 K) 
+with radius of 0.3 cm in the center of the domain as to cause autoignition. Grid refinement criteria based 
+on the gradient of temperature is used and solution convergence is achieved with ``amr.max_level`` of 2.
 
-The `PeleLMeX` results obtained with the previous grid refinement criteria are compared to that of 
+The `PeleLMeX` results obtained using the specified grid refinement criteria are compared to that of 
 Cantera in spatial and mixture fraction space in :numref:`CounterflowLMeXCantera_Spatial` and 
 :numref:`CounterflowLMeXCantera_Mixture`, respectively. Profiles of major species as well as 
 temperature across the flame front are displayed in spatial coordinates and mixture fraction space, 
