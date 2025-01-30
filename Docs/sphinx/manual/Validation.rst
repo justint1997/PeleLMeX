@@ -391,16 +391,20 @@ gaseous Dodecane. The inert inflow velocity on the left and right is set equal t
 jet velocities, respectively, in order to eliminate shear interactions between the inert and jet 
 streams. The oxidizer and fuel jet velocities are 15.0 cm/s and 6.17 cm/s, respectively, corresponding 
 to a global strain rate of :math:`40 s^{-1}`. The initial condition corresponds to air composition 
-filling the left half of the boundary and gaseous Dodecane composition filling the right half of the 
-boundary with a hyperbolic tangent smoothly transitioning species mass fractions in the center of the 
-domain. Ignition is performed by patching a spherical kernel of elevated temperature (in this case 1000 K) 
-with radius of 0.3 cm in the center of the domain as to cause autoignition. Grid refinement criteria based 
-on the gradient of temperature is used and solution convergence is achieved with ``amr.max_level`` of 2.
+filling the left half of the domain and gaseous Dodecane composition filling the right half of the 
+domain with a hyperbolic tangent smoothly transitioning species mass fractions in the center of the 
+domain. Ignition is performed by patching a spherical kernel of elevated temperature (in this case 
+1000 K) with radius of 0.3 cm in the center of the domain as to cause autoignition. Grid refinement 
+criteria based on the gradient of temperature is used and solution convergence is achieved with 
+``amr.max_level`` of 2.
 
 The `PeleLMeX` results obtained using the specified grid refinement criteria are compared to that of 
 Cantera in spatial and mixture fraction space in :numref:`CounterflowLMeXCantera_Spatial` and 
 :numref:`CounterflowLMeXCantera_Mixture`, respectively. Centerline profiles of major species as well as 
-temperature across the flame front at steady-state are displayed, with PeleLMeX results indicated by solid colored lines and Cantera results indicated by black ticked lines. The results show very good agreement between the PeleLMeX and Cantera centerline profiles, with only small differences visible when plotting versus spatial coordinate due to differences in geometry (1-D vs. 2-D). 
+temperature across the flame front at steady-state are displayed, with PeleLMeX results indicated by 
+solid colored lines and Cantera results indicated by black ticked lines. The results show very good 
+agreement between the PeleLMeX and Cantera centerline profiles, with only small differences visible 
+when plotting versus spatial coordinate due to differences in geometry (1-D vs. 2-D). 
 
 
 .. figure:: images/validations/CounterflowFlame/Dodecane_Counterflow_Spatial_Dodecane_Added.png
